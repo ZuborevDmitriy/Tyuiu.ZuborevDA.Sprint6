@@ -44,7 +44,7 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task0.V6
 
         private void buttonQuestion_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы АСОиУБ-23-2 Зуборев Дмитрий Александрович", "Сообщение");
+            MessageBox.Show("Таск 0 выполнил студент группы АСОиУБ-23-2 Зуборев Дмитрий Александрович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
