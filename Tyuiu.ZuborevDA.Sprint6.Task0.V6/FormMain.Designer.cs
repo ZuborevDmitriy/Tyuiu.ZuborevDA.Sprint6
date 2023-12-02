@@ -66,7 +66,8 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task0.V6
             this.textBoxUslText_ZDA.Name = "textBoxUslText_ZDA";
             this.textBoxUslText_ZDA.ReadOnly = true;
             this.textBoxUslText_ZDA.Size = new System.Drawing.Size(251, 102);
-            this.textBoxUslText_ZDA.TabIndex = 0;
+            this.textBoxUslText_ZDA.TabIndex = 1;
+            this.textBoxUslText_ZDA.TabStop = false;
             this.textBoxUslText_ZDA.Text = "Вычислить выражение по формуле";
             // 
             // pictureBoxFormula_ZDA
@@ -132,14 +133,15 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task0.V6
             this.textBoxResult_ZDA.Name = "textBoxResult_ZDA";
             this.textBoxResult_ZDA.ReadOnly = true;
             this.textBoxResult_ZDA.Size = new System.Drawing.Size(187, 20);
-            this.textBoxResult_ZDA.TabIndex = 0;
+            this.textBoxResult_ZDA.TabIndex = 4;
+            this.textBoxResult_ZDA.TabStop = false;
             // 
             // buttonPushMe_ZDA
             // 
             this.buttonPushMe_ZDA.Location = new System.Drawing.Point(306, 280);
             this.buttonPushMe_ZDA.Name = "buttonPushMe_ZDA";
             this.buttonPushMe_ZDA.Size = new System.Drawing.Size(112, 32);
-            this.buttonPushMe_ZDA.TabIndex = 0;
+            this.buttonPushMe_ZDA.TabIndex = 2;
             this.buttonPushMe_ZDA.Text = "Выполнить";
             this.buttonPushMe_ZDA.UseVisualStyleBackColor = true;
             this.buttonPushMe_ZDA.Click += new System.EventHandler(this.buttonPushMe_ZDA_Click);
@@ -150,7 +152,7 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task0.V6
             this.buttonQuestion.Location = new System.Drawing.Point(268, 280);
             this.buttonQuestion.Name = "buttonQuestion";
             this.buttonQuestion.Size = new System.Drawing.Size(32, 32);
-            this.buttonQuestion.TabIndex = 0;
+            this.buttonQuestion.TabIndex = 3;
             this.buttonQuestion.Text = "?";
             this.buttonQuestion.UseVisualStyleBackColor = true;
             this.buttonQuestion.Click += new System.EventHandler(this.buttonQuestion_Click);
