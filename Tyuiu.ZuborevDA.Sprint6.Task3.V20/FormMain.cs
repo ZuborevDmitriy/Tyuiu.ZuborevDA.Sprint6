@@ -71,7 +71,7 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task3.V20
 
         private void buttonInform_ZDA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнил студент группы АСОиУБ-23-2 Зуборев Дмитрий Александрович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 3 выполнил студент группы АСОиУБ-23-2 Зуборев Дмитрий Александрович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
