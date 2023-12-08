@@ -35,28 +35,28 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelUp_ZDA = new System.Windows.Forms.Panel();
-            this.panelLeft_ZDA = new System.Windows.Forms.Panel();
-            this.panelCenter_ZDA = new System.Windows.Forms.Panel();
-            this.splitterBtw_ZDA = new System.Windows.Forms.Splitter();
-            this.groupBoxTask_ZDA = new System.Windows.Forms.GroupBox();
+            this.buttonInform_ZDA = new System.Windows.Forms.Button();
+            this.buttonSave_ZDA = new System.Windows.Forms.Button();
+            this.buttonPushMe_ZDA = new System.Windows.Forms.Button();
             this.groupBoxDataIn_ZDA = new System.Windows.Forms.GroupBox();
+            this.labelStop_ZDA = new System.Windows.Forms.Label();
+            this.labelStart_ZDA = new System.Windows.Forms.Label();
+            this.textBoxStop_ZDA = new System.Windows.Forms.TextBox();
+            this.textBoxStart_ZDA = new System.Windows.Forms.TextBox();
+            this.groupBoxTask_ZDA = new System.Windows.Forms.GroupBox();
+            this.textBoxTask_ZDA = new System.Windows.Forms.TextBox();
+            this.panelLeft_ZDA = new System.Windows.Forms.Panel();
             this.groupBoxDataOut_ZDA = new System.Windows.Forms.GroupBox();
             this.textBoxResult_ZDA = new System.Windows.Forms.TextBox();
-            this.textBoxTask_ZDA = new System.Windows.Forms.TextBox();
-            this.textBoxStart_ZDA = new System.Windows.Forms.TextBox();
-            this.textBoxStop_ZDA = new System.Windows.Forms.TextBox();
+            this.panelCenter_ZDA = new System.Windows.Forms.Panel();
             this.chartFunction_ZDA = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.labelStart_ZDA = new System.Windows.Forms.Label();
-            this.labelStop_ZDA = new System.Windows.Forms.Label();
-            this.buttonPushMe_ZDA = new System.Windows.Forms.Button();
-            this.buttonSave_ZDA = new System.Windows.Forms.Button();
-            this.buttonInform_ZDA = new System.Windows.Forms.Button();
+            this.splitterBtw_ZDA = new System.Windows.Forms.Splitter();
             this.panelUp_ZDA.SuspendLayout();
-            this.panelLeft_ZDA.SuspendLayout();
-            this.panelCenter_ZDA.SuspendLayout();
-            this.groupBoxTask_ZDA.SuspendLayout();
             this.groupBoxDataIn_ZDA.SuspendLayout();
+            this.groupBoxTask_ZDA.SuspendLayout();
+            this.panelLeft_ZDA.SuspendLayout();
             this.groupBoxDataOut_ZDA.SuspendLayout();
+            this.panelCenter_ZDA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZDA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,41 +73,42 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             this.panelUp_ZDA.Size = new System.Drawing.Size(979, 77);
             this.panelUp_ZDA.TabIndex = 0;
             // 
-            // panelLeft_ZDA
+            // buttonInform_ZDA
             // 
-            this.panelLeft_ZDA.Controls.Add(this.groupBoxDataOut_ZDA);
-            this.panelLeft_ZDA.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_ZDA.Location = new System.Drawing.Point(0, 77);
-            this.panelLeft_ZDA.Name = "panelLeft_ZDA";
-            this.panelLeft_ZDA.Size = new System.Drawing.Size(200, 374);
-            this.panelLeft_ZDA.TabIndex = 0;
+            this.buttonInform_ZDA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInform_ZDA.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonInform_ZDA.Location = new System.Drawing.Point(901, 11);
+            this.buttonInform_ZDA.Name = "buttonInform_ZDA";
+            this.buttonInform_ZDA.Size = new System.Drawing.Size(75, 55);
+            this.buttonInform_ZDA.TabIndex = 5;
+            this.buttonInform_ZDA.Text = "Справка";
+            this.buttonInform_ZDA.UseVisualStyleBackColor = false;
+            this.buttonInform_ZDA.Click += new System.EventHandler(this.buttonInform_ZDA_Click);
+            this.buttonInform_ZDA.MouseEnter += new System.EventHandler(this.buttonInform_ZDA_MouseEnter);
             // 
-            // panelCenter_ZDA
+            // buttonSave_ZDA
             // 
-            this.panelCenter_ZDA.Controls.Add(this.chartFunction_ZDA);
-            this.panelCenter_ZDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter_ZDA.Location = new System.Drawing.Point(200, 77);
-            this.panelCenter_ZDA.Name = "panelCenter_ZDA";
-            this.panelCenter_ZDA.Size = new System.Drawing.Size(779, 374);
-            this.panelCenter_ZDA.TabIndex = 0;
+            this.buttonSave_ZDA.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.buttonSave_ZDA.Location = new System.Drawing.Point(736, 11);
+            this.buttonSave_ZDA.Name = "buttonSave_ZDA";
+            this.buttonSave_ZDA.Size = new System.Drawing.Size(75, 55);
+            this.buttonSave_ZDA.TabIndex = 4;
+            this.buttonSave_ZDA.Text = "Сохранить";
+            this.buttonSave_ZDA.UseVisualStyleBackColor = false;
+            this.buttonSave_ZDA.Click += new System.EventHandler(this.buttonSave_ZDA_Click);
+            this.buttonSave_ZDA.MouseEnter += new System.EventHandler(this.buttonSave_ZDA_MouseEnter);
             // 
-            // splitterBtw_ZDA
+            // buttonPushMe_ZDA
             // 
-            this.splitterBtw_ZDA.Location = new System.Drawing.Point(200, 77);
-            this.splitterBtw_ZDA.Name = "splitterBtw_ZDA";
-            this.splitterBtw_ZDA.Size = new System.Drawing.Size(3, 374);
-            this.splitterBtw_ZDA.TabIndex = 1;
-            this.splitterBtw_ZDA.TabStop = false;
-            // 
-            // groupBoxTask_ZDA
-            // 
-            this.groupBoxTask_ZDA.Controls.Add(this.textBoxTask_ZDA);
-            this.groupBoxTask_ZDA.Location = new System.Drawing.Point(3, 3);
-            this.groupBoxTask_ZDA.Name = "groupBoxTask_ZDA";
-            this.groupBoxTask_ZDA.Size = new System.Drawing.Size(422, 67);
-            this.groupBoxTask_ZDA.TabIndex = 0;
-            this.groupBoxTask_ZDA.TabStop = false;
-            this.groupBoxTask_ZDA.Text = "Условие";
+            this.buttonPushMe_ZDA.BackColor = System.Drawing.Color.Green;
+            this.buttonPushMe_ZDA.Location = new System.Drawing.Point(655, 11);
+            this.buttonPushMe_ZDA.Name = "buttonPushMe_ZDA";
+            this.buttonPushMe_ZDA.Size = new System.Drawing.Size(75, 55);
+            this.buttonPushMe_ZDA.TabIndex = 3;
+            this.buttonPushMe_ZDA.Text = "Выполнить";
+            this.buttonPushMe_ZDA.UseVisualStyleBackColor = false;
+            this.buttonPushMe_ZDA.Click += new System.EventHandler(this.buttonPushMe_ZDA_Click);
+            this.buttonPushMe_ZDA.MouseEnter += new System.EventHandler(this.buttonPushMe_ZDA_MouseEnter);
             // 
             // groupBoxDataIn_ZDA
             // 
@@ -121,6 +122,70 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             this.groupBoxDataIn_ZDA.TabIndex = 1;
             this.groupBoxDataIn_ZDA.TabStop = false;
             this.groupBoxDataIn_ZDA.Text = "Ввод данных";
+            // 
+            // labelStop_ZDA
+            // 
+            this.labelStop_ZDA.AutoSize = true;
+            this.labelStop_ZDA.Location = new System.Drawing.Point(109, 16);
+            this.labelStop_ZDA.Name = "labelStop_ZDA";
+            this.labelStop_ZDA.Size = new System.Drawing.Size(66, 13);
+            this.labelStop_ZDA.TabIndex = 3;
+            this.labelStop_ZDA.Text = "Конец шага";
+            // 
+            // labelStart_ZDA
+            // 
+            this.labelStart_ZDA.AutoSize = true;
+            this.labelStart_ZDA.Location = new System.Drawing.Point(3, 16);
+            this.labelStart_ZDA.Name = "labelStart_ZDA";
+            this.labelStart_ZDA.Size = new System.Drawing.Size(64, 13);
+            this.labelStart_ZDA.TabIndex = 2;
+            this.labelStart_ZDA.Text = "Старт шага";
+            // 
+            // textBoxStop_ZDA
+            // 
+            this.textBoxStop_ZDA.Location = new System.Drawing.Point(112, 32);
+            this.textBoxStop_ZDA.Name = "textBoxStop_ZDA";
+            this.textBoxStop_ZDA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStop_ZDA.TabIndex = 2;
+            // 
+            // textBoxStart_ZDA
+            // 
+            this.textBoxStart_ZDA.Location = new System.Drawing.Point(6, 32);
+            this.textBoxStart_ZDA.Name = "textBoxStart_ZDA";
+            this.textBoxStart_ZDA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStart_ZDA.TabIndex = 1;
+            // 
+            // groupBoxTask_ZDA
+            // 
+            this.groupBoxTask_ZDA.Controls.Add(this.textBoxTask_ZDA);
+            this.groupBoxTask_ZDA.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxTask_ZDA.Name = "groupBoxTask_ZDA";
+            this.groupBoxTask_ZDA.Size = new System.Drawing.Size(422, 67);
+            this.groupBoxTask_ZDA.TabIndex = 0;
+            this.groupBoxTask_ZDA.TabStop = false;
+            this.groupBoxTask_ZDA.Text = "Условие";
+            // 
+            // textBoxTask_ZDA
+            // 
+            this.textBoxTask_ZDA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxTask_ZDA.Location = new System.Drawing.Point(3, 16);
+            this.textBoxTask_ZDA.Multiline = true;
+            this.textBoxTask_ZDA.Name = "textBoxTask_ZDA";
+            this.textBoxTask_ZDA.ReadOnly = true;
+            this.textBoxTask_ZDA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTask_ZDA.Size = new System.Drawing.Size(416, 48);
+            this.textBoxTask_ZDA.TabIndex = 0;
+            this.textBoxTask_ZDA.TabStop = false;
+            this.textBoxTask_ZDA.Text = resources.GetString("textBoxTask_ZDA.Text");
+            // 
+            // panelLeft_ZDA
+            // 
+            this.panelLeft_ZDA.Controls.Add(this.groupBoxDataOut_ZDA);
+            this.panelLeft_ZDA.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_ZDA.Location = new System.Drawing.Point(0, 77);
+            this.panelLeft_ZDA.Name = "panelLeft_ZDA";
+            this.panelLeft_ZDA.Size = new System.Drawing.Size(200, 374);
+            this.panelLeft_ZDA.TabIndex = 0;
             // 
             // groupBoxDataOut_ZDA
             // 
@@ -144,32 +209,14 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             this.textBoxResult_ZDA.TabIndex = 0;
             this.textBoxResult_ZDA.TabStop = false;
             // 
-            // textBoxTask_ZDA
+            // panelCenter_ZDA
             // 
-            this.textBoxTask_ZDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTask_ZDA.Location = new System.Drawing.Point(3, 16);
-            this.textBoxTask_ZDA.Multiline = true;
-            this.textBoxTask_ZDA.Name = "textBoxTask_ZDA";
-            this.textBoxTask_ZDA.ReadOnly = true;
-            this.textBoxTask_ZDA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxTask_ZDA.Size = new System.Drawing.Size(416, 48);
-            this.textBoxTask_ZDA.TabIndex = 0;
-            this.textBoxTask_ZDA.TabStop = false;
-            this.textBoxTask_ZDA.Text = resources.GetString("textBoxTask_ZDA.Text");
-            // 
-            // textBoxStart_ZDA
-            // 
-            this.textBoxStart_ZDA.Location = new System.Drawing.Point(6, 32);
-            this.textBoxStart_ZDA.Name = "textBoxStart_ZDA";
-            this.textBoxStart_ZDA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStart_ZDA.TabIndex = 1;
-            // 
-            // textBoxStop_ZDA
-            // 
-            this.textBoxStop_ZDA.Location = new System.Drawing.Point(112, 32);
-            this.textBoxStop_ZDA.Name = "textBoxStop_ZDA";
-            this.textBoxStop_ZDA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStop_ZDA.TabIndex = 2;
+            this.panelCenter_ZDA.Controls.Add(this.chartFunction_ZDA);
+            this.panelCenter_ZDA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter_ZDA.Location = new System.Drawing.Point(200, 77);
+            this.panelCenter_ZDA.Name = "panelCenter_ZDA";
+            this.panelCenter_ZDA.Size = new System.Drawing.Size(779, 374);
+            this.panelCenter_ZDA.TabIndex = 0;
             // 
             // chartFunction_ZDA
             // 
@@ -196,60 +243,13 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             title1.Text = "График функции cos(2x) + ((sin(x))/(x+2,5))  + 2x";
             this.chartFunction_ZDA.Titles.Add(title1);
             // 
-            // labelStart_ZDA
+            // splitterBtw_ZDA
             // 
-            this.labelStart_ZDA.AutoSize = true;
-            this.labelStart_ZDA.Location = new System.Drawing.Point(3, 16);
-            this.labelStart_ZDA.Name = "labelStart_ZDA";
-            this.labelStart_ZDA.Size = new System.Drawing.Size(64, 13);
-            this.labelStart_ZDA.TabIndex = 2;
-            this.labelStart_ZDA.Text = "Старт шага";
-            // 
-            // labelStop_ZDA
-            // 
-            this.labelStop_ZDA.AutoSize = true;
-            this.labelStop_ZDA.Location = new System.Drawing.Point(109, 16);
-            this.labelStop_ZDA.Name = "labelStop_ZDA";
-            this.labelStop_ZDA.Size = new System.Drawing.Size(66, 13);
-            this.labelStop_ZDA.TabIndex = 3;
-            this.labelStop_ZDA.Text = "Конец шага";
-            // 
-            // buttonPushMe_ZDA
-            // 
-            this.buttonPushMe_ZDA.BackColor = System.Drawing.Color.Green;
-            this.buttonPushMe_ZDA.Location = new System.Drawing.Point(655, 11);
-            this.buttonPushMe_ZDA.Name = "buttonPushMe_ZDA";
-            this.buttonPushMe_ZDA.Size = new System.Drawing.Size(75, 55);
-            this.buttonPushMe_ZDA.TabIndex = 3;
-            this.buttonPushMe_ZDA.Text = "Выполнить";
-            this.buttonPushMe_ZDA.UseVisualStyleBackColor = false;
-            this.buttonPushMe_ZDA.Click += new System.EventHandler(this.buttonPushMe_ZDA_Click);
-            this.buttonPushMe_ZDA.MouseEnter += new System.EventHandler(this.buttonPushMe_ZDA_MouseEnter);
-            // 
-            // buttonSave_ZDA
-            // 
-            this.buttonSave_ZDA.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.buttonSave_ZDA.Location = new System.Drawing.Point(736, 11);
-            this.buttonSave_ZDA.Name = "buttonSave_ZDA";
-            this.buttonSave_ZDA.Size = new System.Drawing.Size(75, 55);
-            this.buttonSave_ZDA.TabIndex = 4;
-            this.buttonSave_ZDA.Text = "Сохранить";
-            this.buttonSave_ZDA.UseVisualStyleBackColor = false;
-            this.buttonSave_ZDA.Click += new System.EventHandler(this.buttonSave_ZDA_Click);
-            this.buttonSave_ZDA.MouseEnter += new System.EventHandler(this.buttonSave_ZDA_MouseEnter);
-            // 
-            // buttonInform_ZDA
-            // 
-            this.buttonInform_ZDA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInform_ZDA.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonInform_ZDA.Location = new System.Drawing.Point(901, 11);
-            this.buttonInform_ZDA.Name = "buttonInform_ZDA";
-            this.buttonInform_ZDA.Size = new System.Drawing.Size(75, 55);
-            this.buttonInform_ZDA.TabIndex = 5;
-            this.buttonInform_ZDA.Text = "Справка";
-            this.buttonInform_ZDA.UseVisualStyleBackColor = false;
-            this.buttonInform_ZDA.Click += new System.EventHandler(this.buttonInform_ZDA_Click);
-            this.buttonInform_ZDA.MouseEnter += new System.EventHandler(this.buttonInform_ZDA_MouseEnter);
+            this.splitterBtw_ZDA.Location = new System.Drawing.Point(200, 77);
+            this.splitterBtw_ZDA.Name = "splitterBtw_ZDA";
+            this.splitterBtw_ZDA.Size = new System.Drawing.Size(3, 374);
+            this.splitterBtw_ZDA.TabIndex = 1;
+            this.splitterBtw_ZDA.TabStop = false;
             // 
             // FormMain
             // 
@@ -262,16 +262,17 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task4.V28
             this.Controls.Add(this.panelUp_ZDA);
             this.MinimumSize = new System.Drawing.Size(909, 377);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 4 | Вариант 28 | ЗуборевД. А.";
             this.panelUp_ZDA.ResumeLayout(false);
-            this.panelLeft_ZDA.ResumeLayout(false);
-            this.panelCenter_ZDA.ResumeLayout(false);
-            this.groupBoxTask_ZDA.ResumeLayout(false);
-            this.groupBoxTask_ZDA.PerformLayout();
             this.groupBoxDataIn_ZDA.ResumeLayout(false);
             this.groupBoxDataIn_ZDA.PerformLayout();
+            this.groupBoxTask_ZDA.ResumeLayout(false);
+            this.groupBoxTask_ZDA.PerformLayout();
+            this.panelLeft_ZDA.ResumeLayout(false);
             this.groupBoxDataOut_ZDA.ResumeLayout(false);
             this.groupBoxDataOut_ZDA.PerformLayout();
+            this.panelCenter_ZDA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_ZDA)).EndInit();
             this.ResumeLayout(false);
 
