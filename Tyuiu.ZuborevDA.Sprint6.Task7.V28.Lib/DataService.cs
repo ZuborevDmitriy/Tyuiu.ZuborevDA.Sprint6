@@ -31,7 +31,7 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task7.V28.Lib
                 }
             }
 
-            int xRow = 7;
+            int xRow = 6;
             for (int r = xRow; r <= xRow; r++)
             {
                 for (int c = 0; c < columns; c++)
