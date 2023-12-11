@@ -15,7 +15,7 @@ namespace Tyuiu.ZuborevDA.Sprint6.Task5.V25.Test
         {
             DataService ds = new DataService();
 
-            string path = @"C:\Users\BobaBibkov\source\repos\Tyuiu.ZuborevDA.Sprint6\FileTask5\InPutFileTask5V25.txt";
+            string path = @"C:\DataSprint6\InPutFileTask5V25.txt";
 
             double[] res = ds.LoadFromDataFile(path);
 
